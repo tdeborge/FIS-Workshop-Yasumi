@@ -24,3 +24,15 @@ Go to the directory where you have checked out LAB2:
 
 And import the project.
 
+
+
+
+
+Create a new Project based on the Maven Project Wizard:![](/assets/mvnCreateProject.png)
+
+in the next screen, uncheck the default location and select the directory where you have cloned the workshop repository![](/assets/projectlocation.png)
+
+insert '**fis**' into the filter and look for the correct archetype:![](/assets/Archetype.png)
+
+
+
