@@ -6,9 +6,15 @@ This part of the lab will give you a quick instruction set on how to get the Jav
 
 As this is basic Java compilation and execution, we are not going to set anything up in the Developer Workbench for this.
 
+### Setup the Environment
+
+In order to work in an isolated environment, you can perform the following git command in the main project directory in order to start with the firtst LAB:
+
+**git checkout LAB1**
+
 ### Build the application
 
-In order to build this application:
+In order to build this application \(this is similar for GUIScaleUp\):
 
 * Open a command line
 * Go into the application you want to run: cd &lt;git clone location&gt;/GUIMonolithic
