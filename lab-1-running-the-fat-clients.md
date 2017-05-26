@@ -56,5 +56,3 @@ The pom file for these projects are simple builders ... the extra that is introd
 
 This plugin creates a Jar file that contains all dependent libraries and defines the main class for the manifest.
 
- s
-
