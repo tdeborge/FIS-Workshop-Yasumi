@@ -4,8 +4,6 @@
 
 ![](/assets/yasumiScaleOut.png)
 
-
-
 First of all, we wanted to create a workshop that shows the following possibilities:
 
 * Demonstrate Fuse Integration Services
@@ -19,4 +17,10 @@ First of all, we wanted to create a workshop that shows the following possibilit
 * Beat a single machine using the cloud
 
 So the creation of this workshop will brush on all the previous topics and it beats the normal presentations where a URL will return a page or where Camel Routes are just existing of a CBR/File demo.
+
+**Why based on Karaf?**
+
+In the next version of Fuse and currently on FIS 2.0, we are supporting both SpringBoot and Karaf \(OSGI\) based developments. As Karaf has been the most used Container Deployment so far, we took the Karaf Approach to convert it to FIS. Later we will \(most probably\) also supply the same solution on SpringBoot.
+
+
 
