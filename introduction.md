@@ -31,5 +31,9 @@ This vast number of possible block placements is resulting in a possible **9356*
 
 ## Optimization
 
-In order to reduce the
+In order to reduce the number of block placements, Jan Sipke implemented the following:
+
+> I used backtracking to crack the problem. The function that checks the feasability of the partial solution is crucial to the success of the program. The function I came up with checks whether the size of the open areas in the grid are divisable by 5. If not, then blocks made up of 5 cells cannot be used to fill the open areas. At that point the partial solution can be ignored and another one can be constructed. The program took about 80 minutes on a Pentium II 366 MHz to compile a list of all solutions.
+
+
 
