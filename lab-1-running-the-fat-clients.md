@@ -20,7 +20,7 @@ In the project directory:
 
 * Go to the target directory: cd target
 * execute the java command: java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar  
-  ![](/assets/cleanguie.png)
+  ![](/assets/initialGUI.png)
 
 * Click on the New Interactive Button to start the puzzler.
 
@@ -56,7 +56,5 @@ The pom file for these projects are simple builders ... the extra that is introd
 
 This plugin creates a Jar file that contains all dependent libraries and defines the main class for the manifest.
 
-
-
-![](/assets/initialGUI.png)
+ s
 
