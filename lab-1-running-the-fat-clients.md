@@ -20,7 +20,7 @@ In the project directory:
 
 * Go to the target directory: cd target
 * execute the java command: java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar  
-  ![](/assets/initialGUI.png)
+  ![](/assets/blankGui.png)
 
 * Click on the New Interactive Button to start the puzzler.
 
