@@ -35,5 +35,9 @@ In order to reduce the number of block placements, Jan Sipke implemented the fol
 
 > I used backtracking to crack the problem. The function that checks the feasability of the partial solution is crucial to the success of the program. The function I came up with checks whether the size of the open areas in the grid are divisable by 5. If not, then blocks made up of 5 cells cannot be used to fill the open areas. At that point the partial solution can be ignored and another one can be constructed. The program took about 80 minutes on a Pentium II 366 MHz to compile a list of all solutions.
 
+When looking at the provided optimization and solution, I added my own \(very small\) idea. Looking at all the blocks, the Cross shape is the only non-mutable form. Furthermore, given the fact that all blocks need to be on the grid, we can optimize our program by only calculating the solutions for the Cross as a starter and placing it only in the first Quadrant of the rectangle. Once a solution is found, we can then mirror it horizontal, vertical and diagonal to complete the full solution list.
 
+Applying this last technique brought the solution time of my Java program to under 20 minutes as I only have to calculate 1/4th of the possible solutions.
+
+![](/assets/mirrorSolutions.png)
 
