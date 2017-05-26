@@ -25,7 +25,7 @@ The following is taken from Jan Sipke's webpage:
 > I wanted to have all solutions to this game and wrote a computer program to find them. Using brute force alone would not have gotten me very far, because the problem is very complex.
 >
 > For example, each block \(except the red one\) can be rotated. The red block cannot be rotated, so there is only one way to place it. The green block can be rotated once, so there are two ways to place it. Five other blocks can be rotated twice, so there are four ways to place them. The last five blocks can be rotated three times, so there are eight ways to place them. Therefore, counting rotations only, there are $$1^1*2^1*4^5* 8^5 = 
-> 67,108,864 $$$$1^1 * 2^1 * 4^5 * 8^5$$ ways to place the blocks or 67108864 possible block placements.
+> 67,108,864 $$$$1^1 * 2^1 * 4^5 * 8^5$$67,108,864 ways to place the blocks.
 
 
 
