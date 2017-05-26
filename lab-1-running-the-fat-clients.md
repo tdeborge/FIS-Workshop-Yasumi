@@ -19,7 +19,7 @@ In order to build this application:
 In the project directory:
 
 * Go to the target directory: cd target
-* execute the java command: java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+* execute the java command: java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar  
   ![](/assets/cleanguie.png)
 
 * Click on the New Interactive Button to start the puzzler.
@@ -52,8 +52,11 @@ The pom file for these projects are simple builders ... the extra that is introd
                     </descriptorRefs>
                 </configuration>
             </plugin>
-
 ```
 
 This plugin creates a Jar file that contains all dependent libraries and defines the main class for the manifest.
+
+
+
+![](/assets/initialGUI.png)
 
