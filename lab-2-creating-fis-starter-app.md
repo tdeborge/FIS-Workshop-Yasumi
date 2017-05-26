@@ -10,7 +10,17 @@ This should set the current content of the directory to include the following di
 * GUIScaleOut
 * SupportMaterials
 
+# Hands-On:
 
+As this is the first project we are using the Developer Studio, we will have to import the base project.
 
+## Start Developer Studio
 
+In the File menu, select the import option and import existing maven projects![](/assets/importmavenprojects.png)
+
+Go to the directory where you have checked out LAB2:
+
+![](/assets/checkoutDir.png)
+
+And import the project.
 
