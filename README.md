@@ -4,13 +4,24 @@ This workshop document will walk you through a set of steps that I went through 
 
 ## Preparation
 
+### Machine setup:
+
+Your machine will need to have the following items installed and in the PATH:
+
+* JDK 1.8
+* Maven 3.3
+* Correctly configured settings.xml for maven that points to a Maven Repository that includes all the Red Hat locations
+* Outside Red Hat prepared labs, a CDK \(container Development Kit\) for OpenShift
+
+### Sources
+
 The complete Workshop is located at:
 
 [https://github.com/tdeborge/FIS-Yasumi-Workshop](https://github.com/tdeborge/FIS-Yasumi-Workshop)
 
 You can get this environment with the following command:
 
-**git clone https://github.com/tdeborge/FIS-Yasumi-Workshop.git &lt;possible directory name&gt;**
+**git clone **[https://github.com/tdeborge/FIS-Yasumi-Workshop.git](https://github.com/tdeborge/FIS-Yasumi-Workshop.git)** &lt;possible directory name&gt;**
 
 Once you have cloned the repository, you are set to start the Workshop.
 
