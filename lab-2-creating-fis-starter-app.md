@@ -73,7 +73,7 @@ SupportMaterials/LAB2/ProjectFiles/src/main/resources/\* **to** src/main/resourc
 
 ### File Highlights:
 
-**src/main/java/\*    
+**src/main/java/\*      
 **This section holds all the objects needed for the Puzzler Solution and defines some processors for the Camel Routes.
 
 **src/fabric8/deployment.yml **  
@@ -85,7 +85,9 @@ This Yaml file contains the externalized properties that are used in the Camel R
 **src/main/resources/assembly/etc/com.rhworkshop.msa.yasumipuzzler.cfg**  
 This is the properties configuration file that can be used when running the solution in standalone mode.
 
-**src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml  
+**src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml    
 **![](/assets/camelpuzzlestarter.png)  
 This Camel Route Definition file holds the logic that will be deployed in the Karaf Container.
+
+
 
