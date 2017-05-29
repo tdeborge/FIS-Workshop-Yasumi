@@ -73,7 +73,7 @@ SupportMaterials/LAB2/ProjectFiles/src/main/resources/\* **to** src/main/resourc
 
 ### File Highlights:
 
-**src/main/java/\*        
+**src/main/java/\*          
 **This section holds all the objects needed for the Puzzler Solution and defines some processors for the Camel Routes.
 
 **src/fabric8/deployment.yml **  
@@ -85,55 +85,57 @@ This Yaml file contains the externalized properties that are used in the Camel R
 **src/main/resources/assembly/etc/com.rhworkshop.msa.yasumipuzzler.cfg**  
 This is the properties configuration file that can be used when running the solution in standalone mode.
 
-**src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml      
+**src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml        
 **![](/assets/camelpuzzlestarter.png)  
 This Camel Route Definition file holds the logic that will be deployed in the Karaf Container.
 
 ### POM File Changes
 
-Open the project POM file and insert the following line:  
-**&lt;feature&gt;fabric8-karaf-cm&lt;/feature&gt;**
+Open the project POM file and insert the following lines:  
+**&lt;feature&gt;fabric8-karaf-cm&lt;/feature&gt;  
+&lt;feature&gt;camel-jms&lt;/feature&gt;  
+&lt;feature&gt;activemq-camel&lt;/feature&gt;**
 
 ```
 <!-- 2. create karaf assembly -->
-			<!-- karaf-maven-plugin creates custom microservice distribution -->
-			<plugin>
-				<groupId>org.apache.karaf.tooling</groupId>
-				<artifactId>karaf-maven-plugin</artifactId>
-				<version>${karaf.plugin.version}</version>
-				<extensions>true</extensions>
-				<executions>
-					<execution>
-						<id>karaf-assembly</id>
-						<goals>
-							<goal>assembly</goal>
-						</goals>
-						<phase>install</phase>
-					</execution>
-				</executions>
-				<configuration>
-					<!-- we are using karaf 2.4.x -->
-					<karafVersion>v24</karafVersion>
-					<useReferenceUrls>true</useReferenceUrls>
-					<archiveTarGz>false</archiveTarGz>
-					<includeBuildOutputDirectory>false</includeBuildOutputDirectory>
-					<startupFeatures>
-						<feature>karaf-framework</feature>
-						<feature>shell</feature>
-						<feature>jaas</feature>
-						<feature>camel-jms</feature>
-						<feature>activemq-camel</feature>
-						<feature>aries-blueprint</feature>
-						<feature>camel-blueprint</feature>
-						<feature>fabric8-karaf-blueprint</feature>
-						<feature>fabric8-karaf-checks</feature>
-						<feature>fabric8-karaf-cm</feature>
-					</startupFeatures>
-					<startupBundles>
-						<bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
-					</startupBundles>
-				</configuration>
-			</plugin>
+            <!-- karaf-maven-plugin creates custom microservice distribution -->
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+                <version>${karaf.plugin.version}</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>karaf-assembly</id>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                        <phase>install</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- we are using karaf 2.4.x -->
+                    <karafVersion>v24</karafVersion>
+                    <useReferenceUrls>true</useReferenceUrls>
+                    <archiveTarGz>false</archiveTarGz>
+                    <includeBuildOutputDirectory>false</includeBuildOutputDirectory>
+                    <startupFeatures>
+                        <feature>karaf-framework</feature>
+                        <feature>shell</feature>
+                        <feature>jaas</feature>
+                        <feature>camel-jms</feature>
+                        <feature>activemq-camel</feature>
+                        <feature>aries-blueprint</feature>
+                        <feature>camel-blueprint</feature>
+                        <feature>fabric8-karaf-blueprint</feature>
+                        <feature>fabric8-karaf-checks</feature>
+                        <feature>fabric8-karaf-cm</feature>
+                    </startupFeatures>
+                    <startupBundles>
+                        <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+                    </startupBundles>
+                </configuration>
+            </plugin>
 ```
 
 
