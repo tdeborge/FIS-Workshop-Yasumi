@@ -48,5 +48,9 @@ After these steps, your project explorer should look as follows:
 
 Make sure to work on the PuzzleStarter Project and not in the FISYasumiWorkshop Project \(which is the master directory\).
 
+### Adjust the Project Files
+
+In the Main project, you will find the SupportMaterials for LAB2
+
 
 
