@@ -56,14 +56,16 @@ In the Main project, you will find the SupportMaterials for LAB2:
 
 ### Preparing the project:
 
-Delete the content under the following directories:
+**Delete the content under the following directories:**
 
 ![](/assets/deletedResourceProgram.png)
 
 src/main/java/\*  
 src/main/resources/\*  
-src/test/java/\*  
+src/test/java/\*
 
+**Copy the following sections:**
 
+SupportMaterials/LAB2/ProjectFiles/src/main/java/\* **to** src/main/java  
 
 
