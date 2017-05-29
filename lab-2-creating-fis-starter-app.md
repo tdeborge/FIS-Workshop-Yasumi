@@ -50,7 +50,20 @@ Make sure to work on the PuzzleStarter Project and not in the FISYasumiWorkshop 
 
 ### Adjust the Project Files
 
-In the Main project, you will find the SupportMaterials for LAB2
+In the Main project, you will find the SupportMaterials for LAB2:
+
+\[\[INSERT IMAGE FOR SUPPORT FILES HERE\]\]
+
+### Preparing the project:
+
+Delete the content under the following directories:
+
+![](/assets/deletedResourceProgram.png)
+
+src/main/java/\*  
+src/main/resources/\*  
+src/test/java/\*  
+
 
 
 
