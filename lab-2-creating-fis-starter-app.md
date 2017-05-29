@@ -26,7 +26,9 @@ Go to the directory where you have checked out LAB2:
 
 And import the project.
 
-### Create PuzzleStarterCreate a new Project based on the Maven Module Wizard:
+### Create PuzzleStarter
+
+Create a new Project based on the Maven Module Wizard:
 
 ![](/assets/MavenModuleWizard.png)
 
@@ -45,8 +47,6 @@ After these steps, your project explorer should look as follows:
 ![](/assets/fisprojectexplorer1.png)
 
 Make sure to work on the PuzzleStarter Project and not in the FISYasumiWorkshop Project \(which is the master directory\).
-
-
 
 
 
