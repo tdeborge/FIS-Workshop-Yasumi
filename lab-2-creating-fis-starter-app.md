@@ -62,13 +62,18 @@ In the Main project, you will find the SupportMaterials for LAB2:
 
 src/main/java/\*  
 src/main/resources/\*  
-src/test/java/\*
+src/test/java/\*  
+src/main/fabric8/\*
 
 **Copy the following sections:**
 
 SupportMaterials/LAB2/ProjectFiles/src/main/java/\* **to** src/main/java  
 SupportMaterials/LAB2/ProjectFiles/src/main/fabric8/\* **to** src/main/fabric8  
 SupportMaterials/LAB2/ProjectFiles/src/main/resources/\* **to** src/main/resources
+
+### File Highlights:
+
+
 
 
 
