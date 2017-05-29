@@ -67,5 +67,8 @@ src/test/java/\*
 **Copy the following sections:**
 
 SupportMaterials/LAB2/ProjectFiles/src/main/java/\* **to** src/main/java  
+SupportMaterials/LAB2/ProjectFiles/src/main/fabric8/\* **to** src/main/fabric8  
+SupportMaterials/LAB2/ProjectFiles/src/main/resources/\* **to** src/main/resources
+
 
 
