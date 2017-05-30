@@ -15,7 +15,7 @@ In the Lab 2 directory, you will find 2 Project Directories. The approach to run
 In order to build this application \(this is similar for GUIScaleUp\):
 
 * Open a command line
-* Go into the application you want to run: cd &lt;git clone location&gt;/FIS-Workshop-Yasumi/Labs/Lab 2/Solution/GUIMonolithic
+* Go into the application you want to run: **cd &lt;git clone location&gt;/FIS-Workshop-Yasumi/Labs/Lab 2/Solution/GUIMonolithic**
 * run the maven command: **mvn clean package**
 
 ### Run the application
@@ -26,7 +26,7 @@ In the project directory:
 * execute the java command: **java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar**  
   ![](/assets/blankGui.png)
 
-* Click on the New Interactive Button to start the puzzler.
+* Click on the **New Interactive** Button to start the puzzler.
 
 # Highlights
 
@@ -65,6 +65,4 @@ This plugin creates a Jar file that contains all dependent libraries and defines
 ## Application
 
 The application logic was written in 2001. This has been a long time ago so if you have questions around some programming techniques I used back then, I would not have a clue anymore as to why I decided to do it in that way ... ;\)
-
-
 
