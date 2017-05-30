@@ -8,5 +8,15 @@ As the Yasumi Puzzle Solution on OCP is using the AMQ messaging layer, we will f
 
 ---
 
+## Configure the AMQ Creation Script
+
+* Go into the Lab 1/Solution directory
+* Edit the configureAMQ.sh script and set the OCP\_IP variable to the correct IP Address.
+* Run the Script.
+
+Upon successful execution of the script, you will find the OpenShift Console to be showing the following:
+
+* Added a Project **Yasumi Puzzler**
+* 
 
 
