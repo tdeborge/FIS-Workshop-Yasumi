@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                      
+Define value for property 'groupId': :** com.rhworkshop.msa                        
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -189,7 +189,35 @@ Looking into the target directory, you will find an assembly subdirectory. This 
 
 In order to deploy the project into the OpenShift Environment, copy the deployment script using the following:
 
+**cp ../../support/deployPuzzleStarter.sh .**
 
+Change the IP addres in the script to point to the OCP location. Then execute the script in the project directory:
+
+**./deployPuzzleStarter.sh **
+
+This script will:
+
+* connect to the OpenShift environment with the openshift-dev user
+* select the yasumi project as the active project
+* Upload \(Create\) the yasumipuzzler.yaml ConfigurationMap
+* Deploy the Project in the OpenShift environment using:
+  * mvn clean fabric8:deploy
+
+This approach will speedup the test deployments. The container image is build local on your machines using S2I and then this is passed as a reference to OpenShift where is is instantiated. This means that all your dependency management is handled locally.
+
+---
+
+### Environment Views
+
+Once you have successfully executed these steps, you can use the OpenShift Console to see the following:
+
+On the Overview Page, the PuzzleStarter Pod is added:![](/assets/puzzlestarterpod.png)
+
+Selecting the pod \(by clicking in the circle\) you can then see the details:![](/assets/PuzzleStarterDetails.png)
+
+On this screen you can then select the **Open Java Console** which will open the Jolokia overview where you can find all local information on the Camel Route\(s\).
+
+![](/assets/puzzlestarterCamelRoutes.png)
 
 
 
