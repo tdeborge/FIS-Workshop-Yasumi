@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                    
+Define value for property 'groupId': :** com.rhworkshop.msa                      
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -176,6 +176,20 @@ Once all the changes are made, we can execute a local build from the commandline
 **mvn clean install -Ddocker.skip.build=true**
 
 The added parameter will prevent any docker images to be build.
+
+---
+
+### Inspecting the Build
+
+Looking into the target directory, you will find an assembly subdirectory. This is basically a StandAlone Karaf environment that can be started with the bin/start command. This is not working in the current environment as there is no AMQ Broker running on port 61616 but if you would startup a local broker, the Route would connect and start running.
+
+---
+
+### Deployment
+
+In order to deploy the project into the OpenShift Environment, copy the deployment script using the following:
+
+
 
 
 
