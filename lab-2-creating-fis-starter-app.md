@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                
+Define value for property 'groupId': :** com.rhworkshop.msa                  
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -152,6 +152,8 @@ Replacing the name and description:
 <name>Puzzle Starter</name>
 <description>Camel route to start off the Puzzler application</description>
 ```
+
+### Feature Startup Definition
 
 Locate the **karaf-maven-plugin** section and find the **startupFeatures **section.
 
