@@ -17,6 +17,13 @@ As the Yasumi Puzzle Solution on OCP is using the AMQ messaging layer, we will f
 Upon successful execution of the script, you will find the OpenShift Console to be showing the following:
 
 * Added a Project **Yasumi Puzzler**
-* 
+* Added a Template for the AMQ Broker in the OpenShift Project \(yasumi-amq\)
+
+* In the Overview of the Yasumi Puzzler project you can see the AMQ Broker Pod
+
+![](/assets/AMQBrokerPod.png)
+
+
+
 
 
