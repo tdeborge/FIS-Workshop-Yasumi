@@ -1,4 +1,4 @@
-BLAB - 3
+# LAB - 3
 
 In the Labs directory, you will find all relevant information in the exercise - solution - support directories.
 
@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                        
+Define value for property 'groupId': :** com.rhworkshop.msa                            
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -218,6 +218,4 @@ Selecting the pod \(by clicking in the circle\) you can then see the details:![]
 On this screen you can then select the **Open Java Console** which will open the Jolokia overview where you can find all local information on the Camel Route\(s\).
 
 ![](/assets/puzzlestarterCamelRoutes.png)
-
-
 
