@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa          
+Define value for property 'groupId': :** com.rhworkshop.msa            
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -143,6 +143,29 @@ When inside the camelContext we are using **{{**PROPERTY\_NAME**}}**
 ---
 
 ### POM file changes
+
+#### Information Tags
+
+Replacing the name and description:
+
+```
+<name>Puzzle Starter</name>
+<description>Camel route to start off the Puzzler application</description>
+```
+
+Locate the **karaf-maven-plugin** section and find the **startupFeatures **section.
+
+In this section, add the following features:
+
+```
+<feature>camel-jms</feature>
+<feature>activemq-camel</feature>
+<feature>fabric8-karaf-cm</feature>
+```
+
+These features are enabling JMS in the karaf instance and allow the property resolution to happen.
+
+---
 
 
 
