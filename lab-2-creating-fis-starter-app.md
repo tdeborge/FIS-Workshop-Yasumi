@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                  
+Define value for property 'groupId': :** com.rhworkshop.msa                    
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -168,6 +168,14 @@ In this section, add the following features:
 These features are enabling JMS in the karaf instance and allow the property resolution to happen.
 
 ---
+
+### Building the Project
+
+Once all the changes are made, we can execute a local build from the commandline:
+
+**mvn clean install -Ddocker.skip.build=true**
+
+The added parameter will prevent any docker images to be build.
 
 
 
