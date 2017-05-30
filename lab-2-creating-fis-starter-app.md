@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                            
+Define value for property 'groupId': :** com.rhworkshop.msa                              
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -136,9 +136,9 @@ This part is defining default values for properties and making reference to an e
 
 Further note is that referencing a property in the Camel Environment is done in 2 different ways.
 
-When outside the camelContext \(mostly bean definitions\) we are using **${**PROPERTY NAME**}**
+When outside the camelContext \(mostly bean definitions\) we are using PROPERTY NAME s
 
-When inside the camelContext we are using **{{**PROPERTY\_NAME**}}**
+When inside the camelContext we are using PROPERTY\_NAME
 
 ---
 
