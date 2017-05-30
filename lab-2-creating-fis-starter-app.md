@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa                                  
+Define value for property 'groupId': :** com.rhworkshop.msa                                    
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -66,7 +66,8 @@ Then copy all the Java Sources into place
 
 In camel, we are using the PropertyPlaceHolder approach in order to externalize properties. With the type of project we are currently creating, we will have a standalone version \(running local on OSGI/Karaf\) and a version that can be deployed into OpenShift \(on Docker\). In case we need to have a local version with tailored variables, we need to copy the configuration file in the right location.
 
-**cp ../../support/src/main/resources/assembly/etc/\* src/main/resources/assembly/etc**
+**cp ../../support/src/main/resources/assembly/etc/\* src/main/resources/assembly/etc  
+cp -r ../../support/src/main/resources/resources src/main/resources/**
 
 ---
 
@@ -138,7 +139,7 @@ Further note is that referencing a property in the Camel Environment is done in 
 
 When outside the camelContext \(mostly bean definitions\) we are using ${PROPERTY NAME}
 
-When inside the camelContext we are using {\{PROPERTY\_NAME}\}
+When inside the camelContext we are using {{PROPERTY\_NAME}}
 
 ---
 
