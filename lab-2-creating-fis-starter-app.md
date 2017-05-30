@@ -10,8 +10,6 @@ As this is the first project for Fuse Integration Services, we will be building 
 
 Open a shell and position yourself in the **Labs/Lab 3/exercise directory.**
 
-if needed, you can now copy all commands from this page and execute them in the shell.
-
 ## Creating a new Project
 
 We will start off a new Project by using the Maven Archetyp that is created for fis-karaf. The base project used for this approach is located [here](https://gitlab.com/rh-emea-ssa-fuse-tutorial/fis-configmap-karaf).
@@ -24,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa    
+Define value for property 'groupId': :** com.rhworkshop.msa      
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -40,6 +38,19 @@ Y: : **Y**
 After a successful build, you will have now a project created called PuzzleStarter.![](/assets/puzzlestartercreated.png)
 
 ---
+
+## Changing the created project
+
+in the shell, go to the project directory:
+
+**cd PuzzleStarter**
+
+### Java Code/Libraries
+
+Firs we will remove all generated code:
+
+**rm -rf src/main/java/\*  
+rm -rf src/test/java/\***
 
 
 
