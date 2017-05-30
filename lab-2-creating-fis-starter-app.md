@@ -22,7 +22,7 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** com.rhworkshop.msa      
+Define value for property 'groupId': :** com.rhworkshop.msa        
 **Define value for property 'artifactId': : **PuzzleStarter**  
 Define value for property 'version': 1.0-SNAPSHOT: : **1.0.0-SNAPSHOT**  
 Define value for property 'package': com.rhworkshop.msa: :  
@@ -43,7 +43,11 @@ After a successful build, you will have now a project created called PuzzleStart
 
 in the shell, go to the project directory:
 
-**cd PuzzleStarter**
+---
+
+#### **cd PuzzleStarter**
+
+---
 
 ### Java Code/Libraries
 
@@ -51,6 +55,56 @@ Firs we will remove all generated code:
 
 **rm -rf src/main/java/\*  
 rm -rf src/test/java/\***
+
+Then copy all the Java Sources into place
+
+**cp -r ../../support/src/main/java/\* src/main/java**
+
+---
+
+### Local Configurations
+
+In camel, we are using the PropertyPlaceHolder approach in order to externalize properties. With the type of project we are currently creating, we will have a standalone version \(running local on OSGI/Karaf\) and a version that can be deployed into OpenShift \(on Docker\). In case we need to have a local version with tailored variables, we need to copy the configuration file in the right location.
+
+**cp ../../support/src/main/resources/assembly/etc/\* src/main/resources/assembly/etc**
+
+---
+
+### OpenShift Configurations
+
+The externalized properties in OpenShift are stored in a ConfigMap. This is a yaml file with the following content:
+
+```
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: yasumipuzzler
+  labels:
+    karaf.pid: com.rhworkshop.msa.yasumipuzzler
+
+data:
+  Puzzler.Start.Destination: qa.test.yasumi.start
+  Puzzler.Stop.Destination: qa.test.yasumi.stop
+  Puzzler.PuzzleBox.Destination: qa.test.yasumi.puzzlebox.start
+  Puzzler.Forward.Destination: qa.test.yasumi.forwardEntry
+  Puzzler.Solution.Destination: qa.test.yasumi.solutionEntry
+  Puzzler.amq.BrokerURL: tcp://broker-amq-tcp:61616
+  Puzzler.amq.Username: admin
+  Puzzler.amq.Password: change12_me
+  Puzzler.TestMessage: QA PUZZLER TESTING
+  Puzzler.amq.tuning.concurrentConsumers: '1'
+  Puzzler.amq.tuning.maxConnections: '1'
+  Puzzler.amq.tuning.maximumActiveSessionPerConnectione: '50'
+
+```
+
+It is important that the **karaf.pid** identifier has the same value as defined in the Camel Route Property Placeholder PID.
+
+in order to copy this file in the right location:
+
+**cp ../../support/src/main/fabric8/\*.yaml src/main/fabric8**
+
+### Camel Route
 
 
 
