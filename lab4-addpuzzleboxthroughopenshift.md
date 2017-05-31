@@ -13,7 +13,7 @@ In this section, we will be exploring the OpenShift Web Console in combination w
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
 URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
-Username: **openshift-dev      
+Username: **openshift-dev        
 **Password: **devel**
 
 ---
@@ -35,7 +35,21 @@ Perform the following steps:
 
 ![](/assets/ocpfisaddtoproject.png)
 
+name: **puzzlebox  
+**Git URL: **https://github.com/tdeborge/FIS-Workshop-Yasumi.git**
 
+Then Select the **Advance Options **link![](/assets/ocpboxadvancedoptions.png)
+
+Add the following information:
+
+Context Dir: **/Labs/Lab 4/Solution/PuzzleBox  
+**![](/assets/ocpboxcontextdir.png)  
+Routing: **De-Select the Route Creation option. **There is no need to get to this services from the outside
+
+Buid Configuration:  
+**De-Select the Webhook Configuration  
+De-Select the Automatic build on image change  
+**This is something we are not setting up in this workshop.
 
 
 
