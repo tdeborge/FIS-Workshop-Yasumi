@@ -18,9 +18,13 @@ When working with Fuse, it could be interesting to install the JBoss Fuse Develo
 
 ---
 
-fsd
+## Importing the Exercise
 
+![](/assets/jbodimportproject.png)
 
+Import an existing Maven Project
+
+![](/assets/jbodimportyasumiexercise.png)
 
 
 
