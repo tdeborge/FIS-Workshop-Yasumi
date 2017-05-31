@@ -20,7 +20,7 @@ In order for the Pod to connect to the correct environment, we first need to upl
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
 URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
-Username: **openshift-dev                        
+Username: **openshift-dev                          
 **Password: **devel**
 
 ---
@@ -39,7 +39,7 @@ Perform the following steps:
 * Select the Java Language
 * Select **s2i-karaf2-camel-log**![](/assets/ocpboxcamelloginit.png)
 
-name: **puzzlebox                  
+name: **puzzlebox                    
 **Git URL: [https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)  
 Git Reference: **master**  
 Service Name: **puzzlebox**  
@@ -69,15 +69,13 @@ Provide the CPU and Memory Limits:
 
 In this window, select the **advanced options **and you will notice that the Context Dir field is empty. As we are building from a subdirectory, we can set it to the correct value here:
 
-Context Dir: /Labs/Lab 4/Solution/PuzzleBox
+Context Dir:** /Labs/Lab 4/Solution/PuzzleBox**
 
 ![](/assets/ocpfixcontextdir.png)Once this change is in, select the save button on the bottom.
 
 ![](/assets/ocpboxstartbuild.png)
 
 Then select the **Start Build** option
-
-
 
 ---
 
@@ -96,6 +94,4 @@ These steps have created a running pod that is connected to our AMQ Broker that 
 ## Conclusion
 
 In the deployment process we are missing a crucial field to provide the Context Directory. Once this is Fixed, the build works fine and the container is deployed.![](/assets/ocpboxpodrunning.png)
-
-
 
