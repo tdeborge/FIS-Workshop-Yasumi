@@ -139,7 +139,7 @@ Further note is that referencing a property in the Camel Environment is done in 
 
 When outside the camelContext \(mostly bean definitions\) we are using **${PROPERTY NAME}**
 
-When inside the camelContext we are using ** {{PROPERTY\_NAME}} **
+When inside the camelContext we are using ** { { PROPERTY\_NAME } } **
 
 ---
 
