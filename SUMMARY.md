@@ -10,5 +10,6 @@
 * [Lab 3 - Creating FIS Starter app](lab-3-creating-fis-starter-app.md)
 * [Lab 4-  Using OpenShift Web Console](lab4-addpuzzleboxthroughopenshift.md)
 * [Lab 5 - Using Developer Workbench](lab5-usingdeveloperworkbench.md)
+* [Lab 6 - Starting the Client](lab-6-starting-the-client.md)
 * [scrappages](scrappages.md)
 
