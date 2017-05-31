@@ -20,7 +20,7 @@ In order for the Pod to connect to the correct environment, we first need to upl
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
 URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
-Username: **openshift-dev                  
+Username: **openshift-dev                      
 **Password: **devel**
 
 ---
@@ -37,18 +37,18 @@ Perform the following steps:
 
 * Select the Add to project link which is located Top Center in the browser window
 * Select the Java Language
-* Select **s2i-karaf2-camel-log**
+* Select **s2i-karaf2-camel-log**![](/assets/ocpboxcamelloginit.png)
 
-![](/assets/ocpboxcamelloginit.png)
-
-name: **puzzlebox            
+name: **puzzlebox                
 **Git URL: [https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)
+
+![](/assets/ocpboxkarafparameters1.png)
 
 Then Select the **Advance Options **link
 
 Add the following information:
 
-Context Dir: **/Labs/Lab 4/Solution/PuzzleBox            
+Context Dir: **/Labs/Lab 4/Solution/PuzzleBox                
 **![](/assets/ocpboxcontextdir.png)
 
 Routing: **De-Select the Route Creation option. **There is no need to get to this services from the outside  
@@ -56,8 +56,8 @@ Routing: **De-Select the Route Creation option. **There is no need to get to thi
 
 Buid Configuration:  
 **De-Select the Webhook Configuration  
-De-Select the Automatic build on image change            
-**![](/assets/ocpboxbuildconfiguration.png)**          
+De-Select the Automatic build on image change                
+**![](/assets/ocpboxbuildconfiguration.png)**              
 **This is something we are not setting up in this workshop.
 
 Set the Scaling and Resource Limits to your liking:
