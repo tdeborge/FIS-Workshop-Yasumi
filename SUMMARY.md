@@ -8,5 +8,6 @@
 * [Lab 1 - Messaging Envrionment](lab-1-messaging-envrionment.md)
 * [Lab 2 - Running the Fat Clients](lab-2-running-the-fat-clients.md)
 * [Lab 3 - Creating FIS Starter app](lab-3-creating-fis-starter-app.md)
-* [ScrapPages](scrappages.md)
+* [Lab 4- Using OpenShift Web Console](lab4-addpuzzleboxthroughopenshift.md)
+* lab4-addPuzzleBoxThroughOpenShift
 
