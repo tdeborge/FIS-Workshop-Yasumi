@@ -13,14 +13,27 @@ In this section, we will be exploring the OpenShift Web Console in combination w
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
 URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
-Username: **openshift-dev    
+Username: **openshift-dev      
 **Password: **devel**
 
 ---
 
 ## Overview Status
 
-The Overview window should be reflecting the following situation:![](/assets/ocpboxoverview.png)
+The Overview window should be reflecting the following situation where the AMQ Pod and the puzzlestarter are running.![](/assets/ocpboxoverview.png)
+
+---
+
+## Add to Project
+
+Perform the following steps:
+
+* Select the Add to project link which is located Top Center in the browser window
+* Select the Java Language
+* Select Red Hat JBoss Fuse
+* Select fis-karaf-openshift \(Version 2\)
+
+![](/assets/ocpfisaddtoproject.png)
 
 
 
