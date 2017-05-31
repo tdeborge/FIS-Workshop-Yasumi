@@ -137,9 +137,9 @@ This part is defining default values for properties and making reference to an e
 
 Further note is that referencing a property in the Camel Environment is done in 2 different ways.
 
-When outside the camelContext \(mostly bean definitions\) we are using **${PROPERTY NAME}**
+When outside the camelContext \(mostly bean definitions\) we are using **$\{PROPERTY NAME\}**
 
-When inside the camelContext we are using **{{PROPERTY\_NAME}}**
+When inside the camelContext we are using ** \{\{PROPERTY\_NAME\}\} **
 
 ---
 
