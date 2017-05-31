@@ -12,9 +12,15 @@ In this section, we will be exploring the OpenShift Web Console in combination w
 
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
-URL: **https://192.168.64.2:8443 **\(please replace the IP with your environment\)  
-Username: **openshift-dev  
+URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
+Username: **openshift-dev    
 **Password: **devel**
+
+---
+
+## Overview Status
+
+The Overview window should be reflecting the following situation:![](/assets/ocpboxoverview.png)
 
 
 
