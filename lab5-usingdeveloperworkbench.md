@@ -10,9 +10,7 @@ Locate the JBoss Developer WorkBench and start it up.
 
 ### Integration Stack
 
-When working with Fuse, it could be interesting to install the JBoss Fuse Development Stack
+When working with Fuse, it could be interesting to install the JBoss Fuse Development Stack \(is probably already done\)
 
 ![](/assets/jbdevfusestack.png)
-
-
 
