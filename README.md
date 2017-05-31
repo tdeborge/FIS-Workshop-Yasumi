@@ -17,11 +17,11 @@ Your machine will need to have the following items installed and in the PATH:
 
 The complete Workshop is located at:
 
-[https://github.com/tdeborge/FIS-Yasumi-Workshop](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)
+https://github.com/tdeborge/FIS-Workshop-Yasumi
 
 You can get this environment with the following command:
 
-**git clone **[https://github.com/tdeborge/FIS-Yasumi-Workshop.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)** &lt;possible directory name&gt;**
+**git clone **[https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)** &lt;possible directory name&gt;**
 
 Once you have cloned the repository, you are set to start the Workshop.
 
