@@ -9,5 +9,6 @@
 * [Lab 2 - Running the Fat Clients](lab-2-running-the-fat-clients.md)
 * [Lab 3 - Creating FIS Starter app](lab-3-creating-fis-starter-app.md)
 * [Lab 4-  Using OpenShift Web Console](lab4-addpuzzleboxthroughopenshift.md)
+* [Lab 5 - Using Developer Workbench](lab5-usingdeveloperworkbench.md)
 * [scrappages](scrappages.md)
 
