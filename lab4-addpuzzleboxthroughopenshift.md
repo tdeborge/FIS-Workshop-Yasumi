@@ -10,7 +10,7 @@ In this section, we will be exploring the OpenShift Web Console in combination w
 
 ## Preparing the ConfigMap
 
-In order for the Pod to connect to the correct environment, we first need to upload the configmap. This can be done using the   
+In order for the Pod to connect to the correct environment, we first need to upload the configmap. This can be done using the  
 **deployYaml.sh **script that is located in the Solutions Directory.
 
 ---
@@ -20,7 +20,7 @@ In order for the Pod to connect to the correct environment, we first need to upl
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
 URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
-Username: **openshift-dev            
+Username: **openshift-dev              
 **Password: **devel**
 
 ---
@@ -42,14 +42,14 @@ Perform the following steps:
 
 ![](/assets/ocpfisaddtoproject.png)
 
-name: **puzzlebox      
+name: **puzzlebox        
 **Git URL: [https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)
 
 Then Select the **Advance Options **link![](/assets/ocpboxadvancedoptions.png)
 
 Add the following information:
 
-Context Dir: **/Labs/Lab 4/Solution/PuzzleBox      
+Context Dir: **/Labs/Lab 4/Solution/PuzzleBox        
 **![](/assets/ocpboxcontextdir.png)
 
 Routing: **De-Select the Route Creation option. **There is no need to get to this services from the outside  
@@ -57,8 +57,8 @@ Routing: **De-Select the Route Creation option. **There is no need to get to thi
 
 Buid Configuration:  
 **De-Select the Webhook Configuration  
-De-Select the Automatic build on image change      
-**![](/assets/ocpboxbuildconfiguration.png)**    
+De-Select the Automatic build on image change        
+**![](/assets/ocpboxbuildconfiguration.png)**      
 **This is something we are not setting up in this workshop.
 
 Set the Scaling and Resource Limits to your liking:
@@ -96,9 +96,9 @@ This also makes the puzzlebox unable to connect to the 8181 java-console.
 
 ![](/assets/ocpboxpuzzlestartertemplate.png)
 
+### PuzzleBox \(Template View\)
 
-
-
+![](/assets/ocpboxpuzzlestartertemplateview.png)
 
 
 
