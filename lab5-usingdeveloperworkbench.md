@@ -142,7 +142,27 @@ Uncomment the lines in this file to:
 
 Next step is to build a local version using the Developer Workbench. This is provided that your maven settings within the Workbench are aligned.
 
+Right-Click the Project, select Run-As then select the Run As Maven Build ...
 
+![](/assets/jbodsocprunasmvnbuild.png)
+
+In the dialog that follows:
+
+![](/assets/jbodsocpcleaninstall.png)
+
+name: **PuzzleCalculator Local**  
+Goals: **clean install**
+
+Add a parameter that is: 
+
+name: **docker.skip.build**  
+value: **true** 
+
+This will then build a local configuration without the Docker overhead. The reason to mention this is that local building and testing is faster compared to deploying it to CDK for testing.
+
+---
+
+## Deployment
 
 
 
