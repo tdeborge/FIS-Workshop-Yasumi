@@ -58,7 +58,43 @@ Once you establish the connection, you get the following:
 
 ![](/assets/jbodopenshiftviewresult.png)By right-clicking on the different components you can now see how you can easily edit configurations, and do basic operations on the OpenShift Instance from within the Developer Workbench.
 
+---
 
+### Developer Workbench Possibilities
+
+![](/assets/jbodocptoolingopenshift.png)
+
+Using the tooling, you can:
+
+* Create new connections to other OpenShift instances
+* Create new Projects within the connected instance
+* Create Applications within these Projects
+* Upload JSON resource files
+
+Other options you will be able to use are related to:
+
+![](/assets/jbodocptoolingview2.png)
+
+* Scaling the pod instances
+* Looking at pod log contents
+* Editing the configurations
+* Defining Environment Variables
+
+---
+
+## Finishing the Calculator Service
+
+In order to move through the important files and reflecting on the purpose, we have commented out a few lines. Running through the list will make the deployment work.
+
+---
+
+## Camel Route
+
+When the Fuse workbench plugins are installed, you have a visual editor to manipulate the Camel Routes.
+
+Open the file:
+
+![](/assets/jbodocpcalcopenproject.png)
 
 
 
