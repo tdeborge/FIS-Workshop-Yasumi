@@ -168,5 +168,15 @@ For the deployment, you can create another Run As - maven build ... instance wit
 
 There is also the script that will perform the same execution ... however, the script is also installing the calculator yaml file with all the variables. So in order to have a clean installation, please use the script after adjusting the IP address for the OCP environment.
 
+---
 
+## Final situation
+
+After the deployment, you will find the following situation in your OpenShift View:
+
+![](/assets/jbodsocpfinaldeployment.png)
+
+Which is mirroring the situation in the Overview Browser Window:
+
+![](/assets/ocpdeployumentoverview.png)
 
