@@ -128,6 +128,22 @@ The deployment yaml is the place where we are able to modify the way our deploym
 
 /PuzzleCalculator/src/main/fabric8/yasumipuzzleboxcalculator.yaml
 
+![](/assets/jbodocpyamlcalculator.png)
+
+Uncomment the lines in this file to:
+
+* Make the Camel Route connect to the AMQ instance using the Internal Address within the OpenShift Cluster
+* Make use of the defined username
+* Make use of the defined password
+
+---
+
+## Build Local
+
+Next step is to build a local version using the Developer Workbench. This is provided that your maven settings within the Workbench are aligned.
+
+
+
 
 
 
