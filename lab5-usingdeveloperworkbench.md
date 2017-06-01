@@ -153,10 +153,10 @@ In the dialog that follows:
 name: **PuzzleCalculator Local**  
 Goals: **clean install**
 
-Add a parameter that is: 
+Add a parameter that is:
 
 name: **docker.skip.build**  
-value: **true** 
+value: **true**
 
 This will then build a local configuration without the Docker overhead. The reason to mention this is that local building and testing is faster compared to deploying it to CDK for testing.
 
@@ -164,7 +164,9 @@ This will then build a local configuration without the Docker overhead. The reas
 
 ## Deployment
 
+For the deployment, you can create another Run As - maven build ... instance without the docker skip and as goals **clean fabric8:deploy.**
 
+There is also the script that will perform the same execution ... however, the script is also installing the calculator yaml file with all the variables. So in order to have a clean installation, please use the script after adjusting the IP address for the OCP environment.
 
 
 
