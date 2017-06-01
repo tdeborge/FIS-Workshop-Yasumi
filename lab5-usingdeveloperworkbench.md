@@ -92,9 +92,43 @@ In order to move through the important files and reflecting on the purpose, we h
 
 When the Fuse workbench plugins are installed, you have a visual editor to manipulate the Camel Routes.
 
-Open the file:
+Open the file: PuzzleCalculator/src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzleBoxCalculator.xml
 
 ![](/assets/jbodocpcalcopenproject.png)
+
+When in Design mode, the canvas is showing the following:
+
+![](/assets/jbodocpcanvassimple.png)
+
+Next, go into the Source view and uncomment the **BoxProcessor** Route
+
+Switching back to the Design View, the Canvas now looks like:![](/assets/jbodocpcanvascomplex.png)Save the file ... \(in case there are questions around the route, we can address those off-line\).
+
+---
+
+## Local Configuration
+
+The file /PuzzleCalculator/src/main/resources/assembly/etc/com.rhworkshop.msa.yasumipuzzleboxcalculator.cfg contains information that can be used in case we want to deploy this Route into a standalone OSGI \(karaf\) environment.![](/assets/jbodsocpconfigurationfile.png)We are not going to change anything at this moment, it is just a thing to remember.
+
+---
+
+## Deployment Yaml
+
+![](/assets/jbodocpdeploymentyaml.png)
+
+The deployment yaml is the place where we are able to modify the way our deployment will be pushed out. please uncomment the lines in the file: /PuzzleCalculator/src/main/fabric8/deployment.yml
+
+* replicas to define the number of Pods will be spinning up
+* resources - requests to define the minimum cpu and memory allocations are needed
+* resources - limits to define the maximum allowed resource allocation
+
+---
+
+## Calculator YAML
+
+/PuzzleCalculator/src/main/fabric8/yasumipuzzleboxcalculator.yaml
+
+
 
 
 
