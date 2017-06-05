@@ -9,7 +9,8 @@ Once all the PODs are deployed, it is time to test the environment and check if 
 Go to the Github clone and perform the following:
 
 * cd  Labs/Lab 6/Solution/FISGuiScaleOut
-* Edit the file: 
+* Edit the file:
+
   * src/main/resources/resources/block.properties.
 
   * Locate the property:  
@@ -22,13 +23,28 @@ Go to the Github clone and perform the following:
 
 ## Running the Client
 
-* Once the build is successfully done perform:   
+* Once the build is successfully done perform:  
   **java -jar target/FISGuiScaleout-1.0.0-SNAPSHOT-jar-with-dependencies.jar**
-
-* Then select the **New Interactive** button to start the puzzle.
 
 * Next the application should come up:  
   ![](/assets/initialGUI.png)
+
+* Then select the **New Interactive** button to start the puzzle
+
+* Do some timeing
+
+---
+
+## Change some Parameters
+
+As this is a big OpenShift Cluster, you can now use this system to perform some tests:
+
+* put all pods on 1 replica and see what happens
+* give the calculation pod at least 2 CPU to get the work done \(to get better results\)
+* increase the number of calculation pods to 5
+* Increase the pods to 25
+
+In my testing, 10-12 seconds is the minimum range on this platform.
 
 
 
