@@ -33,5 +33,7 @@ export USERNAME=
 export PASSWORD=
 ```
 
-These variables will then be used in the scripts to get to your specific environment.
+### Workshop At Red Hat:
+
+These variables will then be used in the scripts to get to your specific environment which is provided in the class.
 
