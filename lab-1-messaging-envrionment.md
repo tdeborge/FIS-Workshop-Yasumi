@@ -10,7 +10,7 @@ As the Yasumi Puzzle Solution on OCP is using the AMQ messaging layer, we will f
 
 ## Word of thank
 
-A big thanks goes to Patrick Steiner who used his acquired knowledge on other projects to help me adding the AMQ broker to the project.
+A big thanks goes to **Patrick Steiner** who used his acquired knowledge on other projects to help me adding the AMQ broker to the project.
 
 ---
 
@@ -50,6 +50,4 @@ This configuration file contains all the needed information to create the key an
 ## amq-app-secret.json
 
 This is the template that defines the characteristics for the AMQ broker. Special item to notice is that the port 61616 \(default messaging port for openwire\) is augmented with a nodePort \(30616\) in order to bridge into the container using a TCP Port.
-
-
 
