@@ -4,11 +4,11 @@ This page provides a couple of cheat shortcuts:
 
 # Lightning Speed
 
-Here you find all the needed commands to make the workshop deploy, leaving step 6 to start testing. 
+Here you find all the needed commands to make the workshop deploy, leaving step 6 to start testing.
 
 * cd to your home directory
   * **cd**
-* **git clone https://github.com/tdeborge/FIS-Workshop-Yasumi.git FISLAB**
+* **git clone **[https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)** FISLAB**
 
 * **cd FISLAB/Labs**
 
@@ -23,14 +23,10 @@ Here you find all the needed commands to make the workshop deploy, leaving step 
 
   `export PASSWORD=`
 
-* **cd Lab\ 1/Solution;source configureAMQ.sh;cd ../..**
+* **cd Lab 1/Solution;source configureAMQ.sh;cd ../..**
 
-* cd **Lab\ 3/solution/PuzzleStarter;source deployPuzzleStarter.sh;cd ../../..**
+* **cd** **Lab 3/solution/PuzzleStarter;source deployPuzzleStarter.sh;cd ../../..**
 
 * 
-
-
-
-
 
 
