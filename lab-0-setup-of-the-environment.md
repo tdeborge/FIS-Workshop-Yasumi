@@ -6,8 +6,6 @@ In this section we need to make sure that all machines are setup and configured 
 
 TO BE FINALIZED
 
-
-
 ## Labs and Solutions
 
 From the **git URL, **clone the environment to your local drive.
@@ -21,5 +19,19 @@ cd FISLAB
 
 When inspecting the FISLAB directory structure, you will find a Labs directory that will contain all sections \(labs\) we can touch upon. Each Lab sub-directory contains an exercise part that you will be able to complete and execute and a Solutions part that you can use to skip the step-through in the exercise part.
 
+## Environment Configuration
 
+In order to get some scripts working, it is important to make adjustments to the following file:
+
+FISLAB/Labs/setenv.sh
+
+```
+#!/bin/sh
+#PLEASE VALIDATE THE IP
+export OCP_IP=
+export USERNAME=
+export PASSWORD=
+```
+
+These variables will then be used in the scripts to get to your specific environment.
 
