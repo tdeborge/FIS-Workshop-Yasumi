@@ -23,10 +23,15 @@ Here you find all the needed commands to make the workshop deploy, leaving step 
 
   `export PASSWORD=`
 
-* **cd Lab 1/Solution;source configureAMQ.sh;cd ../..**
+* **cd Lab\ 1/Solution;source configureAMQ.sh;cd ../..**
 
-* **cd** **Lab 3/solution/PuzzleStarter;source deployPuzzleStarter.sh;cd ../../..**
+* **cd** **Lab\ 3/solution/PuzzleStarter;source deployPuzzleStarter.sh;cd ../../..**
 
-* 
+* **cd Lab\ 4/Solution/PuzzleBox/;source deployPuzzleBox.sh;cd ../../..**
+
+* **cd Lab\ 5/Solution/PuzzleCalculator/;source deployPuzzleCalculator.sh;cd ../../..**
+
+
+
 
 
