@@ -1,10 +1,8 @@
 # Setting up the Lab Environment
 
-\[\[PLACEHOLDER FOR OCP DEFINED ENVIRONMENT\]\]
-
 In this section we need to make sure that all machines are setup and configured to talk to the OCP instance of choice.
 
-TO BE FINALIZED
+In the Red Hat Workshop locations, you will find instructions that provide you with the needed variable values to continue. All Software will be installed upfront.
 
 ## Labs and Solutions
 
