@@ -10,6 +10,8 @@ In this section, we will be exploring the OpenShift Web Console in combination w
 
 ## Preparing the ConfigMap
 
+In order to abstract the Configuration Properties out of the Runtime environment, OpenShift offers the notion of ConfigMaps. These artifacts will be used by the Camel Routes.
+
 In order for the Pod to connect to the correct environment, we first need to upload the configmap. This can be done using the  
 **deployYaml.sh **script that is located in the Solutions Directory.
 
@@ -20,7 +22,7 @@ In order for the Pod to connect to the correct environment, we first need to upl
 First you need to connect to your OpenShift Environment.![](/assets/ocpLogin.png)
 
 URL: [https://192.168.64.2:8443](https://192.168.64.2:8443)** **\(please replace the IP with your environment\)  
-Username: **openshift-dev                          
+Username: **openshift-dev                            
 **Password: **devel**
 
 ---
@@ -39,7 +41,7 @@ Perform the following steps:
 * Select the Java Language
 * Select **s2i-karaf2-camel-log**![](/assets/ocpboxcamelloginit.png)
 
-name: **puzzlebox                    
+name: **puzzlebox                      
 **Git URL: [https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)  
 Git Reference: **master**  
 Service Name: **puzzlebox**  
