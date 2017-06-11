@@ -15,15 +15,19 @@ In the Lab 2 directory, you will find 2 Project Directories. The approach to run
 In order to build this application \(this is similar for GUIScaleUp\):
 
 * Open a command line
-* Go into the application you want to run: **cd &lt;git clone location&gt;/FIS-Workshop-Yasumi/Labs/Lab 2/Solution/GUIMonolithic**
-* run the maven command: **mvn clean package**
+* Go into the application you want to run:
+   **`cd <git clone location>/FIS-Workshop-Yasumi/Labs/Lab 2/Solution/GUIMonolithic`**
+* run the maven command: 
+  **`mvn clean package`**
 
 ### Run the application
 
 In the project directory:
 
-* Go to the target directory: **cd target**
-* execute the java command: **java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar**  
+* Go to the target directory: 
+  **`cd target`**
+* execute the java command:   
+  **`java -jar GUIMonolithic-1.0.0-SNAPSHOT-jar-with-dependencies.jar`**  
   ![](/assets/blankGui.png)
 
 * Click on the **New Interactive** Button to start the puzzler.

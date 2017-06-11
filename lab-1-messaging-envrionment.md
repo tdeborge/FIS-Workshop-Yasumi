@@ -16,6 +16,10 @@ A big thanks goes to **Patrick Steiner** who used his acquired knowledge on othe
 
 ## Configure the AMQ Creation Script
 
+As this solution depends on AMQ to provide the messaging layer, we will need to get a JMS Broker installed. The Script that will be used will provide OpenShift with the needed templates and variables to perform this operation. More information is available in the **Highlights** section
+
+Please perform the following steps:
+
 * Go into the Lab 1/Solution directory
 * Edit the configureAMQ.sh script and set the OCP\_IP variable to the correct IP Address.
 * Run the Script.
