@@ -7,10 +7,10 @@ This page provides a couple of cheat shortcuts:
 Here you find all the needed commands to make the workshop deploy, leaving step 6 to start testing.
 
 * cd to your home directory
-  * **cd**
-* **git clone **[https://github.com/tdeborge/FIS-Workshop-Yasumi.git](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)** FISLAB**
+  * **`cd`**
+* **`git clone `**[`https://github.com/tdeborge/FIS-Workshop-Yasumi.git`](https://github.com/tdeborge/FIS-Workshop-Yasumi.git)**` FISLAB`**
 
-* **cd FISLAB/Labs**
+* **`cd FISLAB/Labs`**
 
 * Edit the setenv.sh script to provide the needed global information: \(vi setenv.sh\)  
   `#!/bin/sh`
@@ -23,13 +23,13 @@ Here you find all the needed commands to make the workshop deploy, leaving step 
 
   `export PASSWORD=`
 
-* **cd Lab 1/Solution;source configureAMQ.sh;cd ../..**
+* **`cd Lab 1/Solution;source configureAMQ.sh;cd ../..`**
 
-* **cd** **Lab 3/solution/PuzzleStarter;source deployPuzzleStarter.sh;cd ../../..**
+* **`cd Lab 3/solution/PuzzleStarter;source deployPuzzleStarter.sh;cd ../../..`**
 
-* **cd Lab 4/Solution/PuzzleBox/;source deployPuzzleBox.sh;cd ../../..**
+* **`cd Lab 4/Solution/PuzzleBox/;source deployPuzzleBox.sh;cd ../../..`**
 
-* **cd Lab 5/Solution/PuzzleCalculator/;source deployPuzzleCalculator.sh;cd ../../..**
+* **`cd Lab 5/Solution/PuzzleCalculator/;source deployPuzzleCalculator.sh;cd ../../..`**
 
 ## External IP Access
 
@@ -38,6 +38,4 @@ Remember that the Puzzle Client is running outside the 'OCP Cluster' and as such
 ![](/assets/amqocpexternaladdress.png)
 
 You will need to replace the **http** with **tcp** and add the port number **:30616**
-
-
 

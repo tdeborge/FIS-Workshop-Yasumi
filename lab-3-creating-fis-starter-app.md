@@ -12,7 +12,7 @@ Open a shell and position yourself in the **Labs/Lab 3/exercise **directory**.**
 
 ## Creating a new Project
 
-We will start off a new Project by using the Maven Archetyp that is created for fis-karaf. The base project used for this approach is located [here](https://gitlab.com/rh-emea-ssa-fuse-tutorial/fis-configmap-karaf).
+We will start off a new Project by using the Maven Archetype that is created for fis-karaf. The base project used for this approach is located [here](https://gitlab.com/rh-emea-ssa-fuse-tutorial/fis-configmap-karaf).
 
 ```
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=https://maven.repository.redhat.com/ga/io/fabric8/archetypes/archetypes-catalog/2.2.195.redhat-000007/archetypes-catalog-2.2.195.redhat-000007-archetype-catalog.xml -DarchetypeGroupId=org.jboss.fuse.fis.archetypes -DarchetypeArtifactId=karaf2-camel-log-archetype -DarchetypeVersion=2.2.195.redhat-000007
@@ -22,16 +22,16 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** `com.rhworkshop.msa  `                                          
-**Define value for property 'artifactId': : **`PuzzleStarter`**  
-Define value for property 'version': 1.0-SNAPSHOT: : **`1.0.0-SNAPSHOT`**  
-Define value for property 'package': com.rhworkshop.msa: : `                       `  
-Confirm properties configuration:  
-groupId: com.rhworkshop.msa  
-artifactId: PuzzleStarter  
-version: 1.0.0-SNAPSHOT  
-package: com.rhworkshop.msa  
-Y: : **`Y`**
+Define value for property 'groupId': :** **`com.rhworkshop.msa`**                                            
+**Define value for property 'artifactId': : `PuzzleStarter`  
+Define value for property 'version': 1.0-SNAPSHOT: : `1.0.0-SNAPSHOT`  
+Define value for property 'package': com.rhworkshop.msa: : ```    
+Confirm properties configuration:    
+groupId: com.rhworkshop.msa    
+artifactId: PuzzleStarter    
+version: 1.0.0-SNAPSHOT    
+package: com.rhworkshop.msa    
+Y: : **``Y\`\*\*
 
 ---
 
@@ -45,7 +45,7 @@ in the shell, go to the project directory:
 
 ---
 
-#### **`cd PuzzleStarter`**
+#### `cd PuzzleStarter`
 
 ---
 
@@ -53,12 +53,12 @@ in the shell, go to the project directory:
 
 First we will remove all generated code:
 
-**`rm -rf src/main/java/*`  
-`rm -rf src/test/java/*`**
+`rm -rf src/main/java/*`**  
+**`rm -rf src/test/java/*`
 
 Then copy all the Java Sources into place
 
-**`cp -r ../../support/src/main/java/* src/main/java`**
+`cp -r ../../support/src/main/java/* src/main/java`
 
 ---
 
@@ -66,8 +66,8 @@ Then copy all the Java Sources into place
 
 In camel, we are using the PropertyPlaceHolder approach in order to externalize properties. With the type of project we are currently creating, we will have a standalone version \(running local on OSGI/Karaf\) and a version that can be deployed into OpenShift \(on Docker\). In case we need to have a local version with tailored variables, we need to copy the configuration file in the right location.
 
-**`cp ../../support/src/main/resources/assembly/etc/* src/main/resources/assembly/etc  
- cp -r ../../support/src/main/resources/resources src/main/resources/`**
+`cp ../../support/src/main/resources/assembly/etc/* src/main/resources/assembly/etc    
+ cp -r ../../support/src/main/resources/resources src/main/resources/`
 
 ---
 
@@ -102,7 +102,7 @@ It is important that the **karaf.pid** identifier has the same value as defined 
 
 in order to copy this file in the right location:
 
-**`cp ../../support/src/main/fabric8/*.yaml src/main/fabric8`**
+`cp ../../support/src/main/fabric8/*.yaml src/main/fabric8`
 
 ---
 
@@ -110,8 +110,8 @@ in order to copy this file in the right location:
 
 The Camel Route Definitions is moved into place using the following lines:
 
-**`rm src/main/resources/OSGI-INF/blueprint/camel-log.xml  
-cp ../../support/src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml src/main/resources/OSGI-INF/blueprint`**
+`rm src/main/resources/OSGI-INF/blueprint/camel-log.xml    
+cp ../../support/src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml src/main/resources/OSGI-INF/blueprint`
 
 The following sections in the Camel Route File are important:
 
@@ -174,7 +174,7 @@ These features are enabling JMS in the karaf instance and allow the property res
 
 Once all the changes are made, we can execute a local build from the commandline:
 
-**`mvn clean install -Ddocker.skip.build=true`**
+`mvn clean install -Ddocker.skip.build=true`
 
 The added parameter will prevent any docker images to be build.
 
@@ -190,11 +190,11 @@ Looking into the target directory, you will find an assembly subdirectory. This 
 
 In order to deploy the project into the OpenShift Environment, copy the deployment script using the following:
 
-**`cp ../../support/deployPuzzleStarter.sh .`**
+`cp ../../support/deployPuzzleStarter.sh .`
 
 Change the IP addres in the script to point to the OCP location. Then execute the script in the project directory:
 
-**`./deployPuzzleStarter.sh `**
+`./deployPuzzleStarter.sh`
 
 This script will:
 
