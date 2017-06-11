@@ -8,7 +8,7 @@ As the Yasumi Puzzle Solution on OCP is using the AMQ messaging layer, we will f
 
 ---
 
-## Word of thank
+## Word of thanks
 
 A big thanks goes to **Patrick Steiner** who used his acquired knowledge on other projects to help me adding the AMQ broker to the project.
 
