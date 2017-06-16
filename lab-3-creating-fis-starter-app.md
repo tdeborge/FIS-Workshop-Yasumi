@@ -22,15 +22,15 @@ When executing this command \(ctrl-a and copy\), the following questions will co
 
 ---
 
-Define value for property 'groupId': :** **`com.rhworkshop.msa`**                                            
+Define value for property 'groupId': :** **`com.rhworkshop.msa`**                                              
 **Define value for property 'artifactId': : `PuzzleStarter`  
 Define value for property 'version': 1.0-SNAPSHOT: : `1.0.0-SNAPSHOT`  
-Define value for property 'package': com.rhworkshop.msa: : ```    
-Confirm properties configuration:    
-groupId: com.rhworkshop.msa    
-artifactId: PuzzleStarter    
-version: 1.0.0-SNAPSHOT    
-package: com.rhworkshop.msa    
+Define value for property 'package': com.rhworkshop.msa: : ```      
+Confirm properties configuration:      
+groupId: com.rhworkshop.msa      
+artifactId: PuzzleStarter      
+version: 1.0.0-SNAPSHOT      
+package: com.rhworkshop.msa      
 Y: : **``Y\`\*\*
 
 ---
@@ -53,7 +53,9 @@ in the shell, go to the project directory:
 
 First we will remove all generated code:
 
-`rm -rf src/main/java/*`**  
+`rm -rf src/main/java/*`**  **
+
+**  
 **`rm -rf src/test/java/*`
 
 Then copy all the Java Sources into place
@@ -66,7 +68,7 @@ Then copy all the Java Sources into place
 
 In camel, we are using the PropertyPlaceHolder approach in order to externalize properties. With the type of project we are currently creating, we will have a standalone version \(running local on OSGI/Karaf\) and a version that can be deployed into OpenShift \(on Docker\). In case we need to have a local version with tailored variables, we need to copy the configuration file in the right location.
 
-`cp ../../support/src/main/resources/assembly/etc/* src/main/resources/assembly/etc    
+`cp ../../support/src/main/resources/assembly/etc/* src/main/resources/assembly/etc      
  cp -r ../../support/src/main/resources/resources src/main/resources/`
 
 ---
@@ -110,7 +112,7 @@ in order to copy this file in the right location:
 
 The Camel Route Definitions is moved into place using the following lines:
 
-`rm src/main/resources/OSGI-INF/blueprint/camel-log.xml    
+`rm src/main/resources/OSGI-INF/blueprint/camel-log.xml      
 cp ../../support/src/main/resources/OSGI-INF/blueprint/FuseYasumiPuzzler.xml src/main/resources/OSGI-INF/blueprint`
 
 The following sections in the Camel Route File are important:
